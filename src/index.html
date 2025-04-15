@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COM </title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <style>
+        #dd{
+            background-color: rgb(69, 153, 218);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 shadow-md h-16 w-full top-0" id="dd">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 mr-4"> 
+                    <a href="/" class="flex items-center">
+                        <img 
+                            src="logo.png" 
+                            alt="TCOM Logo" 
+                            class="h-10 w-auto"
+                            width="120"
+                            height="40"
+                        >
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-6">
+                    <li>
+                        <a href="men.html" target="_blank" class="text-black hover:text-blue-600 font-medium transition-colors duration-300">
+                            Men
+                        </a>
+                    </li>
+                    <li>
+                        <a href="women.html" target="_blank" class="text-black hover:text-blue-600 font-medium transition-colors duration-300">
+                            Women
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kids.html" target="_blank" class="text-black hover:text-blue-600 font-medium transition-colors duration-300">
+                            Kids
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cosmetic.html" target="_blank" class="text-black hover:text-blue-600 font-medium transition-colors duration-300">
+                            Cosmetics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html" target="_blank" class="text-black hover:text-blue-600 font-medium transition-colors duration-300">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grocery.html" target="_blank" class="text-black hover:text-blue-600 font-medium transition-colors duration-300">
+                            Grocery
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-xl px-6">
+                    <div class="relative w-full">
+                        <input 
+                            type="text" 
+                            placeholder="Search for products, brands and more" 
+                            class="w-full px-4 py-2 pl-10 pr-8 border border-black rounded-md focus:outline-none focus:border-blue-500 text-sm text-white"
+                        >
+                        <div class="absolute left-3 top-2.5 text-white">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+               
+            
+                <!-- Login Button -->
+                <button class="hidden md:block bg-black text-white px-6 py-2 rounded hover:bg-gray-900 transition-colors duration-300 ml-4">
+                    <a href="../index.php" target="_blank">Login</a>
+                </button>
+                <button class="hidden md:block bg-black text-white px-6 py-2 rounded hover:bg-gray-900 transition-colors duration-300 ml-4">
+                    <a href="mycart.html" target="_blank">Mycart</a>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+       
+        
+        <div class="md:hidden bg-white border-t">
+            <!-- Mobile Search -->
+            <div class="p-4 border-b">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        placeholder="Search for products, brands and more" 
+                        class="w-full px-4 py-2 pl-10 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 text-sm"
+                    >
+                    <div class="absolute left-3 top-2.5 text-gray-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Links -->
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50">Men</a>
+                <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50">Women</a>
+                <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50">Kids</a>
+                <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50">Cosmetics</a>
+                <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                <a href="#" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50">Grocery</a>
+
+                
+                <button class="w-full mt-2 text-center px-3 py-2 bg-black text-white rounded hover:bg-blue-900">
+                    Login
+                </button>
+                <button class="w-full mt-2 text-center px-3 py-2 bg-black text-white rounded hover:bg-blue-900">
+                    My Car
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-20">
+        <!-- Categories Section -->
+         
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-center mb-8">Shop By Category</h2>
+            
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Sports Category -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img 
+                            src="mens.jpg"
+                            alt="Sports Equipment" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        >
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-gray-900 px-6 py-2 rounded-full font-medium">
+                                <a href="men.html">Men</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Men</h3>
+                        <p class="text-gray-600 text-sm">Jeans & T-shirts</p>
+                    </div>
+                </div>
+
+                <!-- Electronics Category -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img 
+                            src="https://png.pngtree.com/background/20230426/original/pngtree-cosmetic-and-cosmetic-products-are-in-front-of-a-mirror-picture-image_2490517.jpg"
+                            alt="Electronics" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        >
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-gray-900 px-6 py-2 rounded-full font-medium">
+                                <a href="cosmetic.html">Cosmetics</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Beauty</h3>
+                        <p class="text-gray-600 text-sm">Beaty</p>
+                    </div>
+                </div>
+
+                <!-- Clothes Category -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3"
+                            alt="Clothes" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        >
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-gray-900 px-6 py-2 rounded-full font-medium">
+                                <a href="men.html">Shop Clothes</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Clothes</h3>
+                        <p class="text-gray-600 text-sm">Fashion & Accessories</p>
+                    </div>
+                </div>
+
+                <!-- Grocery Category -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3"
+                            alt="Grocery" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        >
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-gray-900 px-6 py-2 rounded-full font-medium">
+                               <a href="grocery.html">Shop Grocery</a> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Grocery</h3>
+                        <p class="text-gray-600 text-sm">Fresh Food & Daily Essentials</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-center mb-8">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Add featured products here -->
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-red-400 to-blue-800 rounded-lg p-8 text-white text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4">Special Offers</h2>
+                <p class="text-lg mb-6">Get up to 50% off on selected items</p>
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors duration-300">
+                    <a href="home.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors duration-300">
+                        Shop Now
+                    </a>
+                </button>
+            </div>
+
+            <!-- Single Flex Container -->
+            <div class="flex flex-wrap gap-4">
+                <!-- Item 1 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-40%</span>
+                        <img src="https://m.media-amazon.com/images/I/619HRPW3elL.jpg" alt="Surf Excel" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Surf Excel Easy Wash</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹199</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹119</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()">
+                                <a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-25%</span>
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTmC9L7blehubsfT7z8YADDZQFoh0rN-L25ZuglVwuyW58IZxCXqjof_cfLiE0NRGHwcewB3lOSoY6YZpSmNuB1QAGjK3Z-i3GOm7YFUUg" alt="Dairy Milk" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Dairy Milk Silk</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹175</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹131</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-30%</span>
+                        <img src="https://cdn.shopaccino.com/edible-smart/products/brooke-bond---red-label-135824_l.jpg?v=553" alt="Red Label Tea" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Red Label Tea</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹599</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹419</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-33%</span>
+                        <img src="https://m.media-amazon.com/images/I/71T0QfFl+3L._AC_UF1000,1000_QL80_.jpg" alt="Maggi" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Maggi Noodles</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹149</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹99</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Section with 4 More Items -->
+        <section class="mb-12">
+            <div class="flex flex-wrap gap-4">
+                <!-- Item 9 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-42%</span>
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shampoo/c/d/t/-original-imaghjzpnxzkxjfh.jpeg?q=90&crop=false" alt="Dove Shampoo" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Dove Hair Fall Rescue</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹450</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹261</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-38%</span>
+                        <img src="https://www.bigbasket.com/media/uploads/p/l/152450_16-kissan-fresh-tomato-ketchup.jpg" alt="Kissan Ketchup" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Kissan Tomato Ketchup</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹145</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹90</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-25%</span>
+                        <img src="https://m.media-amazon.com/images/I/71GKSeI9+HL._AC_UF894,1000_QL80_.jpg" alt="Tropicana Juice" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Tropicana Orange Juice</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹160</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹120</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-30%</span>
+                        <img src="https://media.britannia.co.in/large_Good_Day_Cashew_Style_96394de634.png" alt="Good Day Cookies" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Britannia Good Day</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹99</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹69</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fourth Section with 4 More Items -->
+        <section class="mb-12">
+            <div class="flex flex-wrap gap-4">
+                <!-- Item 13 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-35%</span>
+                        <img src="https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_412,c_limit,fl_progressive/assets/images/2024/2/23/802eaf92-272e-4d66-bfb3-74585226021c1708667754606-6628423_1.jpg" alt="Himalaya Face Wash" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Himalaya Neem Face Wash</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹249</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹162</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 14 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-40%</span>
+                        <img src="https://www.bigbasket.com/media/uploads/p/xxl/241601_9-tata-salt-lite-15-low-sodium-iodised-salt.jpg" alt="Tata Salt" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Tata Iodized Salt</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹42</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹25</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 " onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 15 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-45%</span>
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/X79579/boost-health-energy-sports-nutrition-drink-450gm-pet-jar-7-1654249466.jpg"alt="Boost" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Boost Health Drink</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹295</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹162</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"  onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 16 -->
+                <div class="flex-1 min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <span class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-sm">-30%</span>
+                        <img src="https://grocery.harshainfotech.in/e-commerce/datas/images/product/PRO007003.jpeg" alt="Saffola Gold" class="w-full h-48 object-cover"/>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Saffola Gold Oil</h3>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through">₹599</span>
+                                <span class="text-lg font-bold text-blue-600 ml-2">₹419</span>
+                            </div>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"  onclick="addToCart()"><a href="mycart.html">Add to Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">About Us</h3>
+                    <p class="text-gray-400">Your one-stop shop for all your needs</p>
+                    <p class="text-gray-400">
+                        <a href="feedback.html">feedback for E-comm </a></p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Categories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: ashishjy2288@gmail.com</li>
+                        <li>Phone: 8651591002</li>
+                        <li>Address: Lovely Professional University,Phagwara (Punjab)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.35C0 23.4.6 24 1.325 24h21.35C23.4 24 24 23.4 24 22.675V1.325C24 .6 23.4 0 22.675 0zm-3.15 12.15h-3.15v10.35h-4.5V12.15h-2.25V9.75h2.25V7.5c0-3.15 1.9-4.5 4.5-4.5 1.275 0 2.375.1 2.675.15v3.1h-1.85c-1.45 0-1.75.65-1.75 1.65v2.25h3.15l-.45 2.4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.5 0h-15C2.01 0 0 2.01 0 4.5v15C0 21.99 2.01 24 4.5 24h15c2.49 0 4.5-2.01 4.5-4.5v-15C24 2.01 21.99 0 19.5 0zm-11.25 20.25h-3v-10.5h3v10.5zm-1.5-11.88c-.96 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75-.79 1.75-1.75 1.75zm13.75 11.88h-3v-5.25c0-1.25-.02-2.88-1.75-2.88-1.75 0-2.02 1.25-2.02 2.88v5.25h-3v-10.5h3v1.43c1.25-2.38 4.25-2.38 4.25 1.25v8.82z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 18.5c0 .825-.675 1.5-1.5 1.5h-9c-.825 0-1.5-.675-1.5-1.5v-9c0-.825.675-1.5 1.5-1.5h9c.825 0 1.5.675 1.5 1.5v9zm-6-12.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5zm0 7.5c-1.375 0-2.5-1.125-2.5-2.5s1.125-2.5 2.5-2.5 2.5 1.125 2.5 2.5-1.125 2.5-2.5 2.5zm4.5-6.5c-.825 0-1.5-.675-1.5-1.5s.675-1.5 1.5-1.5 1.5.675 1.5 1.5-.675 1.5-1.5 1.5z"/>
+                            </svg>
+                        </a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

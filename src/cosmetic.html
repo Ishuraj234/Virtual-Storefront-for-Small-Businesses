@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics - TCOM</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 shadow-md h-16 w-full top-0" id="dd">
+        <!-- Copy navigation from index.html -->
+    </nav>
+
+    <!-- Cosmetics Hero Section -->
+    <section class="relative h-96">
+        <img src="https://png.pngtree.com/background/20230426/original/pngtree-cosmetic-and-cosmetic-products-are-in-front-of-a-mirror-picture-image_2490517.jpg"  alt="Cosmetics Banner" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0  bg-opacity-40 flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Beauty & Cosmetics</h1>
+                <p class="text-xl mb-6">Discover Your Perfect Beauty Products</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Shop By Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Makeup -->
+            <div class="group relative cursor-pointer">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/289/368/non_2x/eyeshadow-palette-and-brushes-photo.jpg"  alt="Makeup" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-white font-semibold text-xl">Makeup</h3>
+            </div>
+
+            <!-- Skincare -->
+            <div class="group relative cursor-pointer">
+                <img src="https://img.freepik.com/premium-photo/skincare-products-hd-8k-wallpaper-stock-photographic-image_915071-27866.jpg" alt="Skincare" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-white font-semibold text-xl">Skincare</h3>
+            </div>
+
+            <!-- Haircare -->
+            <div class="group relative cursor-pointer">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20230816/pngtree-a-small-table-with-several-products-and-a-hair-brush-image_13021859.jpg"  alt="Haircare" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-white font-semibold text-xl">Haircare</h3>
+            </div>
+
+            <!-- Fragrances -->
+            <div class="group relative cursor-pointer">
+                <img src="https://t4.ftcdn.net/jpg/09/20/77/13/360_F_920771397_gGZxblj3gUyNtiHKaZ4C0NNupG8gVgWY.jpg"  alt="Fragrances" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-white font-semibold text-xl">Fragrances</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://cassette.sphdigital.com.sg/image/herworld/1142931ce3c51b2af3d0ccce037cd84b7231c733a31e371e1771fa87794cdafd?w=700&q=85"alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Luxury Lipstick</h3>
+                    <p class="text-gray-600 mb-2">₹599</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/043/098/470/small/mockup-of-a-brown-glass-dropper-bottle-with-blank-label-a-bottle-of-essential-oil-free-photo.jpg" alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Face Serum</h3>
+                    <p class="text-gray-600 mb-2">₹899</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1699373381616-6133334e754e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhhaXIlMjBvaWx8ZW58MHx8MHx8fDA%3D"  alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Hair Oil</h3>
+                    <p class="text-gray-600 mb-2">₹499</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?cs=srgb&dl=pexels-valeriya-1961792.jpg&fm=jpg" alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Perfume</h3>
+                    <p class="text-gray-600 mb-2">₹1299</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About Us</h4>
+                    <p class="text-gray-400">Your beauty and cosmetics destination.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">Email: ashishjy2288@gmail.com</p>
+                    <p class="text-gray-400">Phone: 8651591002</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

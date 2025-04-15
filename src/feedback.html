@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback with Star Rating & Confetti</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .form-container {
+      width: 320px;
+      margin: 80px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    form input, form textarea {
+      width: 90%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin: 10px 0;
+    }
+
+    .star {
+      font-size: 24px;
+      cursor: pointer;
+      color: #ccc;
+      transition: color 0.3s;
+    }
+
+    .star.selected {
+      color: gold;
+    }
+
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Your Feedback" required></textarea>
+      <div class="stars" id="starRating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+      <input type="hidden" id="ratingValue" name="rating" value="0">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script>
+    // Confetti Setup
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const particles = [];
+
+    function createConfetti(x, y) {
+      for (let i = 0; i < 100; i++) {
+        particles.push({
+          x: x,
+          y: y,
+          size: Math.random() * 6 + 2,
+          color: `hsl(${Math.random() * 360}, 100%, 50%)`,
+          speedX: Math.random() * 6 - 3,
+          speedY: Math.random() * -5 - 2,
+          gravity: 0.1
+        });
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p, index) => {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        p.speedY += p.gravity;
+        p.size *= 0.97;
+        if (p.size < 0.5) {
+          particles.splice(index, 1);
+        } else {
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      });
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    // Star Rating Logic
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('ratingValue');
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        let rating = star.getAttribute('data-value');
+        ratingInput.value = rating;
+
+        stars.forEach(s => s.classList.remove('selected'));
+        for (let i = 0; i < rating; i++) {
+          stars[i].classList.add('selected');
+        }
+      });
+    });
+
+    // Form Submission
+    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (ratingInput.value == 0) return; // No alert, just ignore if no rating
+
+      const rect = this.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+
+      createConfetti(x, y);
+      this.reset();
+      stars.forEach(s => s.classList.remove('selected'));
+      ratingInput.value = 0;
+    });
+  </script>
+
+</body>
+</html>

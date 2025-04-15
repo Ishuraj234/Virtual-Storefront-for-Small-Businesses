@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery - TCOM</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 shadow-md h-16 w-full top-0" id="dd">
+        <!-- Copy navigation from index.html -->
+    </nav>
+
+    <!-- Grocery Hero Section -->
+    <section class="relative h-96">
+        <img src="https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1880/2024/10/25104824/istock-1291772632.webp"
+             alt="Grocery Banner"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-opacity-40 flex items-center justify-center">
+            <div class="text-center text-black">
+                <h1 class="text-4xl font-bold mb-4">Fresh Groceries Delivered</h1>
+                <p class="text-xl mb-6">Get Your Daily Essentials in Minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Shop By Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Fruits & Vegetables -->
+            <div class="group relative cursor-pointer">
+                <img src="https://www.lalpathlabs.com/blog/wp-content/uploads/2019/01/Fruits-and-Vegetables.jpg"
+                     alt="Fruits & Vegetables"
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Fruits & Vegetables</h3>
+            </div>
+
+            <!-- Dairy & Breakfast -->
+            <div class="group relative cursor-pointer">
+                <img src="https://static.virtubox.io/project/file/20210510-063214-w19i-dairy-breakfast.png" alt="Dairy & Breakfast"
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Dairy & Breakfast</h3>
+            </div>
+
+            <!-- Snacks & Beverages -->
+            <div class="group relative cursor-pointer">
+                <img src="https://www.qatar-tribune.com/uploads/imported_images/data/20170427/images/22_3_1.jpg" alt="Snacks & Beverages"
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Snacks & Beverages</h3>
+            </div>
+
+            <!-- Cleaning & Household -->
+            <div class="group relative cursor-pointer">
+                <img src="https://cdn.shopaccino.com/refresh/articles/blog-homecare-14-12-2022-691340_l.png?v=531 " alt="Cleaning & Household"
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Cleaning & Household</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Popular Items</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://www.bbassets.com/media/uploads/p/xxl/10000148_33-fresho-onion.jpg"  alt="Fresh Onions"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Fresh Onions (1kg)</h3>
+                    <p class="text-gray-600 mb-2">₹39</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://www.jiomart.com/images/product/original/491614849/mother-dairy-toned-milk-1-l-pouch-product-images-o491614849-p590049243-0-202203170616.jpg?im=Resize=(1000,1000)"alt="Toned Milk"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Toned Milk (1L)</h3>
+                    <p class="text-gray-600 mb-2">₹68</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://media.istockphoto.com/id/172410199/photo/sliced-loaf-of-wholemeal-brown-bread-on-a-white-background.jpg?s=612x612&w=0&k=20&c=1QHEXikE6qsj7ljIx0aW9trLVCTC1CnhVFe_KzJvtHQ=" alt="Whole Wheat Bread"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Whole Wheat Bread</h3>
+                    <p class="text-gray-600 mb-2">₹45</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://cdn.zeptonow.com/production/ik-seo/tr:w-640,ar-1500-1500,pr-true,f-auto,q-80/inventory/product/8be9c68f-a400-4aee-92e3-ba040f7979b3-1kMeRvaEH3TlH-D-1EAGk1Rz9Q10l74rM/Fortune-Biryani-Special-Basmati-Rice.jpeg" alt="Rice"
+                     class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Basmati Rice (5kg)</h3>
+                    <p class="text-gray-600 mb-2">₹399</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About Us</h4>
+                    <p class="text-gray-400">Your trusted grocery delivery partner.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white">Daily Essentials</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Best Offers</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Fresh Arrivals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">Email: ashishjy2288@gmail.com</p>
+                    <p class="text-gray-400">Phone: 8651591002</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

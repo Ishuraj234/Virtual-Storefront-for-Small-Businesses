@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCOM - Fashion Store</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 shadow-md h-16 w-full top-0" id="dd">
+        <div class="container mx-auto px-4 h-full">
+            <div class="flex justify-between items-center h-full">
+                <div class="text-white text-2xl font-bold">TCOM</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="men.html" class="text-white hover:text-gray-200">Men</a>
+                    <a href="women.html" class="text-white hover:text-gray-200">Women</a>
+                    <a href="kids.html" class="text-white hover:text-gray-200">Kids</a>
+                    <a href="cosmetic.html" class="text-white hover:text-gray-200">Beauty</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <input type="search" placeholder="Search for products" class="px-4 py-1 rounded">
+                    <a href="#" class="text-white hover:text-gray-200">Cart</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Carousel -->
+    <section class="relative h-96">
+        <div class="carousel relative h-full">
+            <img src="https://cdn.shopify.com/s/files/1/0427/8914/2689/collections/50d6ccb60de7205a19ab19a96f849619_c279a4cc-de2b-4fa9-82f4-c0ca40f12215.jpg?v=1734341428"  alt="Fashion Banner" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-opacity-30 flex items-center justify-center">
+                <div class="text-center text-black">
+                    <h1 class="text-5xl font-bold mb-4">Summer Collection 2025</h1>
+                    <p class="text-xl mb-8">Discover the latest trends in fashion</p>
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Shop By Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Men's Fashion -->
+            <div class="group relative cursor-pointer">
+                <img src="https://www.gentlemanwithin.com/wp-content/uploads/2024/10/0-sprezzatura-pitti-windowpane-gingham-check-suit-accessories-outfits.jpg"class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Men's Fashion</h3>
+            </div>
+
+            <!-- Women's Fashion -->
+            <div class="group relative cursor-pointer">
+                <img src="https://livingforstyle.com.au/wp-content/uploads/2023/07/74e7b96553c1880fb915bfb0b39d6d1d.jpg"class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Women's Fashion</h3>
+            </div>
+
+            <!-- Kids Fashion -->
+            <div class="group relative cursor-pointer">
+                <img src="https://i.pinimg.com/736x/a9/b4/b3/a9b4b3d1a6503664745785947341e2c7.jpg"  alt="Kids Fashion" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Kids Fashion</h3>
+            </div>
+
+            <!-- Beauty -->
+            <div class="group relative cursor-pointer">
+                <img src="https://professionalbeauty.in/wp-content/uploads/2023/06/BANNER-OPTION-1-scaled.jpg" alt="Beauty" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Beauty</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Trending Now</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://ramrajcotton.in/cdn/shop/files/2_ad3d02b7-a5e8-42cf-9ae0-a221a099c708.jpg?v=1692355457"  alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Casual T-Shirt</h3>
+                    <p class="text-gray-600 mb-2">₹499</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/7103YD5h4ML._AC_UY350_.jpg" alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Summer Dress</h3>
+                    <p class="text-gray-600 mb-2">₹899</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://tigc.in/cdn/shop/files/compress_0421-cpdnm-azure__1.jpg?v=1720758011" alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Denim Jeans</h3>
+                    <p class="text-gray-600 mb-2">₹1299</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/12/368338078/TT/WR/RB/32968154/men-formal-shirt.webp" alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Formal Shirt</h3>
+                    <p class="text-gray-600 mb-2">₹799</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About TCOM</h4>
+                    <p class="text-gray-400">Your one-stop destination for all fashion needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Customer Service</h4>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Shipping Info</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <p class="text-gray-400">Email: ashishjy2288@gmail.com</p>
+                    <p class="text-gray-400">Phone: 8651591002</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

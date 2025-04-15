@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion - TCOM</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-r from-red-400 to-blue-800 shadow-md h-16 w-full top-0" id="dd">
+        <!-- Copy navigation from index.html -->
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-bold mb-4">Women's Fashion</h1>
+    
+        </div>
+    </nav>
+
+    <!-- Women's Fashion Hero Section -->
+    <section class="relative h-96">
+        <img src="https://i.pinimg.com/736x/7e/d0/7d/7ed07dd0533c0e6e1ae94b82f9c0e233.jpg" alt="Women's Fashion Banner" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <img src="https://blog.mirrawluxe.com/wp-content/uploads/2024/06/photo-collage.png-12.png"
+                 alt="Women's Fashion"
+                 class="absolute inset-0 w-full h-full object-cover">
+            <div class="text-center text-black relative z-10">
+                <h1 class="text-4xl font-bold mb-4">Women's Fashion</h1>
+                <p class="text-xl mb-6">Discover Latest Trends & Styles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Shop By Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Ethnic Wear -->
+            <div class="group relative cursor-pointer">
+                <img src="https://safaaworld.com/cdn/shop/articles/Indian_Ethnic_Wear.jpg?v=1720780109" alt="Ethnic Wear" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Ethnic Wear</h3>
+            </div>
+
+            <!-- Western Wear -->
+            <div class="group relative cursor-pointer">
+                <img src="https://www.kalkifashion.com/blogs/wp-content/uploads/2024/09/How_To_Style_Indo_Western_Wear_For_Different_Occasions_From_Weddings-scaled.jpg" alt="Western Wear" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Western Wear</h3>
+            </div>
+
+            <!-- Footwear -->
+            <div class="group relative cursor-pointer">
+                <img src="https://t4.ftcdn.net/jpg/04/38/22/13/360_F_438221327_P8AUZ3p6eoF4twEK6C2j1fjgFLg7qf25.jpg"  alt="Footwear" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Footwear</h3>
+            </div>
+
+            <!-- Accessories -->
+            <div class="group relative cursor-pointer">
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*w2ZtNewCRB7uakMLKuME6A.jpeg"alt="Accessories" 
+                     class="w-full h-64 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300 rounded-lg"></div>
+                <h3 class="absolute bottom-4 left-4 text-black font-semibold text-xl">Accessories</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://fashor.com/cdn/shop/products/15188_7.jpg?v=1736402525"alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Floral Maxi Dress</h3>
+                    <p class="text-gray-600 mb-2">₹1299</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/A1VUON82HqL._AC_UY1100_.jpg" alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Designer Saree</h3>
+                    <p class="text-gray-600 mb-2">₹2499</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://i.etsystatic.com/22281248/r/il/fa78d2/3027463105/il_570xN.3027463105_jf84.jpg"  alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Casual Jumpsuit</h3>
+                    <p class="text-gray-600 mb-2">₹999</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://c1.wallpaperflare.com/preview/293/253/161/bag-arm-fashion-style.jpg"alt="Product" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2">Stylish Handbag</h3>
+                    <p class="text-gray-600 mb-2">₹799</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About Us</h4>
+                    <p class="text-gray-400">Your ultimate destination for women's fashion.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400">
+                        <li class="mb-2"><a href="#" class="hover:text-white">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">Email: ashishjy2288@gmail.com</p>
+                    <p class="text-gray-400">Phone: 8651591002</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
