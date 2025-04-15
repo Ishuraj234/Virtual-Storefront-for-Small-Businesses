@@ -20,7 +20,6 @@ if (!isset($_SESSION["user"])) {
         <a href="logout.php" class="btn btn-warning">Logout</a>
         <br><br>
         <a href="src/index.html" class="btn btn-primary">Dashboard</a>
-        //jwefku
     </div>
 </body>
 </html>
